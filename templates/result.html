@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Result</title>
+  <style>
+    body {
+      background-color: #1b1b1b;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #80ed99;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 30px;
+      color: #f4d35e;
+    }
+
+    .card-box {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #292929;
+      border-radius: 10px;
+      width: 50%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .score {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #f4d35e;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    a:hover {
+      background-color: #e8c441;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Game Result</h1>
+  <div class="card-box">
+    <p><strong>Your Cards:</strong> {{ user_cards }}</p>
+    <p class="score">Your Score: {{ user_score }}</p>
+
+    <p><strong>Dealer's Cards:</strong> {{ dealer_cards }}</p>
+    <p class="score">Dealer's Score: {{ dealer_score }}</p>
+  </div>
+
+  <h2>{{ result }}</h2>
+
+  <a href="/">Play Again 🔁</a>
+</body>
+</html>
