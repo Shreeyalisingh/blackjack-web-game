@@ -7,3 +7,9 @@ Play a simple Blackjack game built with Python and Flask!
 Try it here: [https://blackjack-web-game.onrender.com](https://blackjack-web-game.onrender.com)
 
 
+## Screenshots
+
+![Game Screen](game.png)  
+![Result Screen](result(1).png)
+
+
