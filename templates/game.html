@@ -29,3 +29,60 @@
             color: black;
             padding: 15px 20px;
             border-radius: 10px;
+            font-size: 20px;
+            box-shadow: 0 0 10px #facc15;
+        }
+        form {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #facc15;
+            color: #0a0a23;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #eab308;
+        }
+        .message {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🃏 Blackjack</h1>
+
+    <div class="section">
+        <h2>Player's Cards</h2>
+        <div class="cards">
+            {% for card in player_cards %}
+                <div class="card">{{ card }}</div>
+            {% endfor %}
+        </div>
+        <p>Total: {{ player_score }}</p>
+    </div>
+
+    <div class="section">
+        <h2>Dealer's Cards</h2>
+        <div class="cards">
+            {% for card in dealer_cards %}
+                <div class="card">{{ card }}</div>
+            {% endfor %}
+        </div>
+        <p>Total: {{ dealer_score }}</p>
+    </div>
+
+    <form method="post" action="/hit">
+        <button type="submit">Hit</button>
+    </form>
+    <form method="post" action="/stand">
+        <button type="submit">Stand</button>
+    </form>
+</body>
+</html>
