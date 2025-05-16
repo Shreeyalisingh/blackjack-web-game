@@ -10,6 +10,6 @@ Try it here: [https://blackjack-web-game.onrender.com](https://blackjack-web-gam
 ## Screenshots
 
 ![Game Screen](game.png)  
-![Result Screen](result(1).png)
+![Result Screen](result (1).png)
 
 
